@@ -16,8 +16,6 @@ from os import listdir
 from os.path import isfile, join
 
 AC_NAME = "CFEKBET1"
-PORT = sys.argv[1]
-
 # connection to assetchain
 rpc_connection = tuilib.def_credentials(AC_NAME)
 
@@ -374,4 +372,4 @@ def on_click(n_clicks, txid):
         pass
 
 if __name__ == '__main__':
-    app.run_server(host = '0.0.0.0', port=PORT, debug=True)
+    app.run_server(host = '0.0.0.0', port=5555, debug=True)
